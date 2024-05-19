@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# To-Do List Web Application
+
+This is a simple to-do list web application built with Next.js, TailwindCSS, and Redux. The application allows users to create, edit, delete, and manage tasks with persistence using browser local storage.
+
+## Features
+
+- **Create Task**: Add new tasks with a title and description.
+- **Edit Task**: Update existing tasks.
+- **Delete Task**: Remove tasks from the list.
+- **View Tasks**: Display a list of tasks with pagination.
+- **Persistent Storage**: Tasks are saved in the browser's local storage.
+
+## Technologies Used
+
+- **Next.js**: A React framework for server-side rendering and static web applications.
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development.
+- **Redux**: A state management library for JavaScript applications.
+- **LocalStorage**: Web storage API for persisting data in the browser.
+
+
+### Components
+
+- **TaskForm**: A form component for adding and editing tasks.
+- **TaskList**: A component to display tasks with pagination and action buttons (edit, delete).
+
+### Pages
+
+- **_app.js**: The main application component that wraps the application with the Redux provider.
+- **index.js**: The home page component that renders the TaskList component.
+
+### Store
+
+- **index.js**: The Redux store configuration.
+- **tasksSlice.js**: The Redux slice that handles tasks actions and reducers.
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to set up and run the project locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (v14.x or later)
+- npm (v6.x or later)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-username/todo-app.git
+   cd todo-app
+   
+Usage
+Adding a Task
+Enter the task title and description in the input fields.
+Click the "Add Task" button to add the task to the list.
+Editing a Task
+Click the "Edit" button next to the task you want to edit.
+Update the title and description in the form.
+Click the "Update Task" button to save the changes.
+Local Storage
+Tasks are saved in the browser's local storage, ensuring they persist across page reloads and browser sessions.
